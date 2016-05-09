@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'lepers/game'
+
+  get 'lepers/score'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
