@@ -1,2 +1,17 @@
-<h1>Lepers#game</h1>
-<p>Find me in app/views/lepers/game.html.erb</p>
+<h1>Lepers game !</h1>
+<p>******** Welcome to the longest word-game !********</p>
+<p>Here is your grid: </p>
+
+
+<p><%= @grid %></p>
+<% @start_time = Time.now %>
+
+<form action="/score" method='get'>
+  <label for="question">What's your best shot ?</label>
+  <input type="hidden" name="start_time" value="<%=@start_time%>">
+  <input type="hidden" name="grid" value="<%=@grid.join(" ")%>">
+  <input type="text" id="answer" name="attempt" placeholder="answer">
+  <input type="submit" value="Go on!">
+</form>
+
+

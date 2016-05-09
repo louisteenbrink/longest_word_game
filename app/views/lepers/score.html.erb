@@ -1,2 +1,11 @@
-<h1>Lepers#score</h1>
-<p>Find me in app/views/lepers/score.html.erb</p>
+<h1>Lepers score</h1>
+
+
+<p> Your word: </p> <%= @attempt %>
+<p> Time taken to answer: </p> <%= @result[:time] %>
+<p> Your translation: </p> <%= @result[:translation] %>
+<p> Your score: </p> <%= @result[:score] %>
+<p> Your message: </p> <%= @result[:message] %>
+
+
+
